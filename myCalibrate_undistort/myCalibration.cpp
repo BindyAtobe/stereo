@@ -33,6 +33,7 @@ double myCalibrateCamera(InputArrayOfArrays _objectPoints,
                          InputOutputArray _cameraMatrix, InputOutputArray _distCoeffs,
                          OutputArrayOfArrays _rvecs, OutputArrayOfArrays _tvecs) {
     int nimages = (int) _objectPoints.total(), ni, total = 0;
+    CV_Assert(nimages >= 3);
     for (int i = 0; i < nimages; ++i) {
         Mat objpt = _objectPoints.getMat(i);
         ni = objpt.checkVector(3, CV_32F);
@@ -41,7 +42,6 @@ double myCalibrateCamera(InputArrayOfArrays _objectPoints,
         CV_Assert(ni == ni1);//检查每幅图3d点和2d点个数是否对应相同
         total += ni;//得到角点总数
     }
-
     Mat objectPoints(1, total, CV_32FC3),
             imagePoints(1, total, CV_32FC2),
             npoints(1, nimages, CV_32S);
