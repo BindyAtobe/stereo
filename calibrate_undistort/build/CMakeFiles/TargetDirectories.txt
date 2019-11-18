@@ -1,0 +1,3 @@
+/Users/wangconghao/Documents/github-stereo/question6&7/build/CMakeFiles/rebuild_cache.dir
+/Users/wangconghao/Documents/github-stereo/question6&7/build/CMakeFiles/edit_cache.dir
+/Users/wangconghao/Documents/github-stereo/question6&7/build/CMakeFiles/calibrate_undistort.dir
