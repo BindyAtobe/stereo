@@ -19,7 +19,7 @@ cmake 3.15
 2. stereo_calib
    1. 进入项目目录stereo_calib，新建一个文件夹myBuild  
       `mkdir myBuild`
-   2. 将Build文件夹中的xml文件复制到myBuild，里面存储着需要读取的图片路径信息
+   2. 将Build文件夹中的.xml文件复制到myBuild，里面存储着需要读取的图片路径信息
    3. 进入myBuild，用cmake编译
    4. 用默认参数运行程序即可  
       `./stereo_calib`
