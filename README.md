@@ -26,15 +26,22 @@ cmake 3.15
    5. 当立体校正后绘制过对极线的窗口弹出时，按空格显示下一张图片
    6. 也可以获取更多参数信息  
       `./stereo_calib  -help`
+3. stereo_match_sgbm
+   1. 用cmake编译
+   2. 运行程序  
+      `./stereo_match_sgbm 左图路径 右图路径 -blocksize=窗口大小 -max-disparity=视差搜索范围 -i=内参文件路径 -e=外参文件路径 -o=视差图名称`
+   3. 也可以获取更多参数信息  
+      `./stereo_match_sgbm  -help`
 ### 待办事宜
 - [x] 相机基础
-   - [x] 实现相机标定(question6)-calibrate_undistort
-   - [x] 实现畸变校正(question7)-calibrate_undistort
+   - [x] 相机标定(question6)-calibrate_undistort
+   - [x] 畸变校正(question7)-calibrate_undistort
    - [x] 复现张正友标定(question8)-myCalibrate_undistort
 - [x] 双目基础
-   - [x] 实现立体标定(question12)-stereo_calib
-   - [x] 实现立体校正(question14)-stereo_calib
+   - [x] 立体标定(question12)-stereo_calib
+   - [x] 立体校正(question14)-stereo_calib
 - [ ] 立体匹配
+   - [x] SGBM(question17)-stereo_match_sgbm
 ### 备注
 * data文件夹下是实验数据
 * 我的实验结果保存在`项目文件夹/build/.yml文件`中
