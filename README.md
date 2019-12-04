@@ -27,7 +27,7 @@ cmake 3.15
    6. 也可以获取更多参数信息  
       `./stereo_calib  -help`
 3. stereo_match_sgbm
-   1. 用cmake编译
+   1. 如上用cmake编译
    2. 运行程序  
       `./stereo_match_sgbm 左图路径 右图路径 -blocksize=窗口大小 -max-disparity=视差搜索范围 -i=内参文件路径 -e=外参文件路径 -o=视差图名称`
    3. 也可以获取更多参数信息  
